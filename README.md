@@ -2,6 +2,8 @@
  Üniversite öğrencilerinin ders notlarını sanal alemde birbirleri ile paylaşabileceği, var olan notlara yorum yapabileceği, puan verebileceği ve birbirleri 
 ile iletişime geçebileceği sosyal bir platform.
 
+![Anasayfa Resmi](https://github.com/turkmuhendisnet/NotBankasi.com/blob/master/NotBankas%C4%B1%20Anasayfa%20g%C3%B6r%C3%BCn%C3%BCm%20.jpg)
+
 ## Amaç 
  Üniversite öğrencilerine kendileri tarafından  hazılanan bir not kütüphanesi oluşturmaktır.
 ## Aşamalar
