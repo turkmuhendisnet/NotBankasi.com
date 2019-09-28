@@ -1,0 +1,124 @@
+﻿
+@{
+    ViewBag.Title = "NotYukleme";
+    Layout = "~/Views/Shared/_LayoutUye.cshtml";
+}
+
+@section head{
+
+    <head>
+        <link href="/Css/DosyaYuklemeCSS.css" rel="stylesheet" />
+    </head>
+
+    <!-- Not yükleme css -->
+}
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Not Yükleme</h1>
+</div>
+<div class="row">
+    <div class="container">
+        <div class="col-md-10">
+            <div class="stepwizard">
+                <div class="stepwizard-row setup-panel">
+                    <div class="stepwizard-step">
+                        <a href="#step-1" type="button" class="btn btn-primary btn-circle">1</a>
+                        <p>Not Bilgileri</p>
+                    </div>
+                    <div class="stepwizard-step">
+                        <a href="#step-2" type="button" class="btn btn-default btn-circle" disabled="disabled">2</a>
+                        <p>Üniversite Bilgileri</p>
+                    </div>
+                    <div class="stepwizard-step">
+                        <a href="#step-3" type="button" class="btn btn-default btn-circle" disabled="disabled">3</a>
+                        <p>Son</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <form role="form" class="text-primary">
+            <div class="row setup-content" id="step-1">
+                <div class="col-md-8" style="margin-left:170px;">
+                    <h3>Not Bilgileri</h3>
+                    <div class="form-group">
+                        <label class="control-label">Yükelenecek Notu Seçiniz</label>
+                        <input class="form-control" type="file" name="YukelenenNot" value="" required="required"style="height:45px;"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Ders Adı</label>
+                        <input maxlength="100" type="text" required="required" class="form-control" placeholder="Ders adını giriniz" />
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Açıklama</label>   
+                        <textarea type="text" class="form-control " placeholder="Açıklama giriniz" name="Text1" cols="5" rows="5"></textarea>
+                    </div>
+                    <button class="btn btn-primary nextBtn btn-success" type="button">İleri</button>
+                </div>
+            </div>
+            <div class="row setup-content" id="step-2">
+                <div class="col-md-8" style="margin-left:170px;">
+                    <h3>Üniversite Bilgileri</h3>
+                    <div class="form-group">
+                        <label class="control-label">Ünüveriste İsmi</label>
+                        <select class="form-control">
+                            <option hidden>Üniveriste ismini seçiniz</option>
+                            <option value="value">Kocaeli Üniversitesi</option>
+                            <option value="value">Balıkesir Üniversitesi</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Fakülte İsmi</label>
+                        <select class="form-control">
+                            <option hidden>Fakülte ismini seçiniz</option>
+                            <option value="value">Mühendislik Fakültesi</option>
+                            <option value="value">Fen Edebiyat</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label class="control-label">Bölüm İsmini</label>
+                        <select class="form-control">
+                            <option hidden>Bölüm ismini seçiniz</option>
+                            <option value="value">İç Mimarlık</option>
+                            <option value="value">Dış Mimarlık</option>
+                        </select>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6" style="display:inline-block">
+                            <label class="control-label">Yıl</label>
+                            <input type="text" class="form-control" placeholder="Yıl giriniz" style="" />
+                        </div>
+                        <div class="form-group col-md-6" style="display:inline-block">
+                            <label class="control-label">Dönem</label>
+                            <select class="form-control">
+                                <option hidden>Dönem seçiniz</option>
+                                <option value="value">Bahar</option>
+                                <option value="value">Güz</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button style="display:block" class="btn btn-primary nextBtn btn-success" type="button">İleri</button>
+                </div>
+            </div>
+            <br />
+            <div class="row setup-content" id="step-3">
+                <div class="col-md-8" style="margin-left:170px;">
+                    <div class="col-md-12">
+                        <h3> Yükleme İşlemi Tamamlandı</h3>
+                        <button class="btn btn-success btn-success pull-right" type="submit">Son</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+
+
+@section script{
+
+    <!-- Not yükleme js -->
+    <script src="~/Scripts/bootstrap.min.js"></script>
+    <script src="~/Scripts/DosyaYukelemeJS.js"></script>
+    <!-- Not yükleme js -->
+
+
+}
+

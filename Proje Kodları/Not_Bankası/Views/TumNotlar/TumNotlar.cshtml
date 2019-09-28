@@ -1,0 +1,91 @@
+﻿
+@{
+    ViewBag.Title = "TumNotlar";
+    //Layout = "~/Views/Shared/_LayoutUye.cshtml";
+}
+
+
+@section head{
+    <link href="~/Css/font-awesome.min.css" rel="stylesheet" />
+    <link href="~/Css/TumNotlarınSayfası.css" rel="stylesheet" />
+}
+
+@* bursaı kullanıcı ve user ile ortak sayfa  *@
+
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Not Ara</h1>
+</div>
+<div class="row">
+    <div class="col-lg-12">
+        <div class="main-box clearfix">
+            <div class="table-responsive">
+                <table class="table user-list">
+                    <thead>
+                        <tr>
+                            <th><span>Ders Adı</span></th>
+                            <th class="text-center"><span>Üniveriste</span></th>
+                            <th class="text-center"><span>Bölüm</span></th>
+                            <th class="text-center"><span>Yıl</span></th>
+                            <th class="text-center"><span>Dönem</span></th>
+                            <th class="text-center"><span>Araçlar</span></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <img src="~/img/pdfimage.png" alt="">
+                                <label class="label label-success pt-3">Lineer Cebir</label>
+                            </td>
+                            <td>
+                                Koacaeli Üniversitesi
+                            </td>
+                            <td class="text-center">
+                                <span class="label label-default">Makine Mühendisliği</span>
+                            </td>
+                            <td class="text-center">
+                                <label>2018</label>
+                            </td>
+                            <td class="text-center">
+                                <span class="label label-default">Güz</span>
+                            </td>
+                            <td class="text-center">
+                                <input class="btn btn-primary " type="button" name="indir" value=" indir" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="text-center">
+                                <img src="~/img/pdfimage.png" alt="">
+                                <label class="label label-success pt-3">Lineer Cebir</label>
+                            </td>
+                            <td class="text-center">
+                                Düzce Üniveristesi
+                            </td>
+                            <td class="text-center">
+                                <span class="label label-success">Elektrik Elektronik Mühendisliği</span>
+                            </td>
+                            <td class="text-center">
+                                <label>2019</label>
+                            </td>
+                            <td class="text-center">
+                                <span class="label label-default">Bahar</span>
+                            </td>
+                            <td class="text-center">
+                                <input class="btn btn-primary " type="button" name="indir" value=" indir" />
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div aria-label="Page navigation ">
+                <ul class="pagination pull-right">
+                    <li class="page-item "><a class="page-link" href="#">Geri</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">İleri</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+

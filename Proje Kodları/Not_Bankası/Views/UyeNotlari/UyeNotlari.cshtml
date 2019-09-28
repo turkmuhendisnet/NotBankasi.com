@@ -1,0 +1,100 @@
+﻿
+@{
+    ViewBag.Title = "UyeNotlari";
+    Layout = "~/Views/Shared/_LayoutUye.cshtml";
+}
+
+@section head
+{
+    <head>
+        <!-- Tablo css leri -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link href="~/Css/TableCSS.css" rel="stylesheet" />
+        <!-- Tablo css leri -->
+    </head>
+
+}
+<div class="d-sm-flex align-items-center justify-content-between mb-4">
+    <h1 class="h3 mb-0 text-gray-800">Notlarım</h1>
+</div>
+<div class="row">
+    <div class="col-md-12">
+        <div class="container">
+            <div>
+                <div class="table-title">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <button type="button" class="btn btn-info add-new">Ekle</button>
+                        </div>
+                    </div>
+                </div>
+                <table class="table table-bordered">
+                    <thead class="btn-primary">
+                        <tr>
+                            <th>Format</th>
+                            <th>Ders Adı</th>
+                            <th>Fakülte</th>
+                            <th>Bölüm</th>
+                            <th>Üniveriste</th>
+                            <th>Düzenle</th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-dark">
+                        <tr>
+                            <td>
+                                <img src="~/img/pdfimage.png" alt="" style="height:40px;width:30px">
+                            </td>
+                            <td>Kimya</td>
+                            <td>Mühendislik Fakültesi</td>
+                            <td>Kimya Mühendisliği</td>
+                            <td>Kocaeli Üniveristesi</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="~/img/pdfimage.png" alt="" style="height:40px;width:30px">
+                            </td>
+                            <td>Coğrafya</td>
+                            <td>Fen Edebiyat Fakültesi</td>
+                            <td>Öğretmenlik</td>
+                            <td>Düze Üniveristesi</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <img src="~/img/pdfimage.png" alt="" style="height:40px;width:30px">
+                            </td>
+                            <td>Fizik</td>
+                            <td>Mühendislik Fakültesi</td>
+                            <td>Matematik Öğretmenliği</td>
+                            <td>Sakarya Üniversitesi</td>
+                            <td>
+                                <a class="add" title="Add" data-toggle="tooltip"><i class="material-icons">&#xE03B;</i></a>
+                                <a class="edit" title="Edit" data-toggle="tooltip"><i class="material-icons">&#xE254;</i></a>
+                                <a class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE872;</i></a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+    @section script{
+        <script src="~/Scripts/TablePageJS.js"></script>
+        <script src="~/Scripts/bootstrap.min.js"></script>
+    }
+
+
+
+    <!-- Tablo js leri -->
+    <!-- Tablo js leri -->

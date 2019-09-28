@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="10c236d2c0bd42d9b65f71d285aaa43e" Name="Diagram1">
+        <EntityTypeShape EntityType="NotBankasiModel.NotBilgileri" Width="1.5" PointX="3" PointY="3.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NotBankasiModel.sysdiagram" Width="1.5" PointX="7.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="NotBankasiModel.Universite" Width="1.5" PointX="0.75" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="NotBankasiModel.Universite_Bolum" Width="1.5" PointX="5.25" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="NotBankasiModel.Universite_Fakulte" Width="1.5" PointX="3" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="NotBankasiModel.UyeBilgileri" Width="1.5" PointX="5.25" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NotBankasiModel.YorumBilgileri" Width="1.5" PointX="3" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="NotBankasiModel.Mesaj" Width="1.5" PointX="7.75" PointY="4.25" IsExpanded="true" />
+        <AssociationConnector Association="NotBankasiModel.FK_NotBilgileri_Universite" ManuallyRouted="false" />
+        <AssociationConnector Association="NotBankasiModel.FK_UYEBILGILERI_NOTBILGILERI" ManuallyRouted="false" />
+        <AssociationConnector Association="NotBankasiModel.FK_UNIVERSITEBOLUM_UNIVERSITE" ManuallyRouted="false" />
+        <AssociationConnector Association="NotBankasiModel.FK_Universite_Fakulte_Universite" ManuallyRouted="false" />
+        <AssociationConnector Association="NotBankasiModel.FK_UyeBilgileri_Universite" ManuallyRouted="false" />
+        <AssociationConnector Association="NotBankasiModel.FK_UNIVERSITEBOLUM_UNIVERSITEFAKULTE" ManuallyRouted="false" />
+        <AssociationConnector Association="NotBankasiModel.FK_UyeBilgileri_Universite_Bolum" ManuallyRouted="false" />
+        <AssociationConnector Association="NotBankasiModel.FK_UYEBILGILERI_YORUMBILGILERI" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
