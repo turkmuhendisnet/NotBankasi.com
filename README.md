@@ -38,6 +38,6 @@ ile iletişime geçebileceği sosyal bir platform.
 * Melih Atmaca (Back End  Developer)
 * Nursebil Karataş (Veri Tabanı Uzmanı)
 
-Proje gelitirme aşamasında dır.
+Proje geliştirme aşamasındadır.
 
  
